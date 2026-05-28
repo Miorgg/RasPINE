@@ -21,6 +21,12 @@ on:
         required: false
         default: true
 
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write 
+  
 # Prevent concurrent runs - queue them instead
 concurrency:
   group: master-pipeline
